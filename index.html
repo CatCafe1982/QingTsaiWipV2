@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy – QingTsaiWip V2</title>
+<title>隱私權政策 – QingTsaiWip V2</title>
 
 <style>
     :root {
@@ -100,105 +100,105 @@
 <body>
 <div class="container">
 
-<h1>Privacy Policy – QingTsaiWip V2</h1>
-<p class="meta"><strong>Last Updated:</strong> November 12, 2025</p>
+<h1>隱私權政策 – QingTsaiWip V2</h1>
+<p class="meta"><strong>最後更新日期：</strong>2025 年 11 月 12 日</p>
 
-<h2>1. Types of Data We Collect</h2>
+<h2>1. 我們收集的資料類型</h2>
 
-<h3>1.1 Personal Identifiable Information (PII)</h3>
+<h3>1.1 個人可識別資訊（PII）</h3>
 <p>
-To provide account login, subscription verification, and personalized features,  
-the App uses <strong>Sign in with Apple</strong> and collects:
+為提供帳號登入、訂閱驗證與個人化功能，  
+本 App 透過 <strong>Sign in with Apple</strong> 蒐集以下資訊：
 </p>
 
 <ul>
-  <li>uid</li>
-  <li>email</li>
-  <li>displayName</li>
-  <li>isSubscribed</li>
-  <li>subscriptionExpiryDate</li>
+  <li>uid（使用者唯一識別碼）</li>
+  <li>email（電子郵件）</li>
+  <li>displayName（顯示名稱）</li>
+  <li>isSubscribed（是否訂閱）</li>
+  <li>subscriptionExpiryDate（訂閱到期日）</li>
 </ul>
 
-<p>Apple manages authentication securely. The developer has no access to passwords.</p>
+<p>Apple 會安全管理驗證程序，開發者無法取得密碼。</p>
 
-<h3>1.2 User-Generated Content</h3>
+<h3>1.2 使用者產生內容</h3>
 <p>
-Users may create production records containing  
-<code>partNumber</code>, <code>workOrder</code>, <code>lotNumber</code>,  
-<code>remark</code>, <code>station</code>, <code>machinesString</code>, and more.
+使用者可能建立包含以下欄位的生產記錄：  
+<code>partNumber</code>、<code>workOrder</code>、<code>lotNumber</code>、  
+<code>remark</code>、<code>station</code>、<code>machinesString</code> 等。
 </p>
 
-<p>These are stored in Firestore:</p>
+<p>這些資料會儲存在 Firestore 資料庫：</p>
 <ul>
   <li>/groups/{groupId}/records/{recordId}</li>
   <li>/globalRecords/{recordId}</li>
 </ul>
 
-<h2>2. Purposes of Data Usage</h2>
+<h2>2. 資料使用目的</h2>
 <ul>
-  <li>Account creation and maintenance</li>
-  <li>Subscription verification</li>
-  <li>Group collaboration support</li>
-  <li>Technical support and service improvements</li>
+  <li>建立與維護帳號</li>
+  <li>訂閱狀態驗證</li>
+  <li>支援群組協作與共用</li>
+  <li>技術支援與服務改進</li>
 </ul>
 
-<h2>3. Data Storage and Processing</h2>
+<h2>3. 資料儲存與處理方式</h2>
 <p>
-Data is stored in <strong>Firebase Firestore</strong> (Google LLC).  
-Authentication is handled via <strong>Sign in with Apple</strong> and <strong>StoreKit</strong>.
+資料儲存於 <strong>Firebase Firestore</strong>（Google LLC）。  
+身份驗證由 <strong>Sign in with Apple</strong> 與 <strong>StoreKit</strong> 完成。
 </p>
 
-<h2>4. Data Sharing</h2>
+<h2>4. 資料分享</h2>
 
-<h3>4.1 Sharing Between Users</h3>
+<h3>4.1 使用者之間的分享</h3>
 <p>
-Group owners may share data with invited members.  
-Members who join a group gain access to shared data based on group permissions.
+群組擁有者可將資料分享給受邀成員。  
+加入群組的成員會依據群組權限取得對資料的存取權。
 </p>
 
-<h3>4.2 Third-Party Sharing</h3>
+<h3>4.2 第三方資料分享</h3>
 <p>
-Other than Apple and Firebase services,  
-<strong>no personal data is sold, rented, or shared with any third party.</strong>
+除 Apple 與 Firebase 服務外，  
+<strong>本 App 不會出售、出租或分享任何個人資料予第三方。</strong>
 </p>
 
-<h2>5. Data Deletion and Cache Management</h2>
+<h2>5. 資料刪除與快取管理</h2>
 <ul>
-  <li>Users may delete individual or all production records</li>
-  <li>Group owners may delete entire groups (irreversible)</li>
-  <li>Local Firebase cache can be cleared from settings</li>
+  <li>使用者可刪除單筆或全部生產記錄</li>
+  <li>群組擁有者可刪除整個群組（不可復原）</li>
+  <li>可從設定頁清除 Firebase 本機快取</li>
 </ul>
 
-<h2>6. Data Retention</h2>
+<h2>6. 資料保存期限</h2>
 <p>
-Data is stored until the user deletes it.  
-Deletion requests are processed within <strong>30 days</strong>.
+除非使用者自行刪除，資料將持續保存。  
+刪除要求會在 <strong>30 天內</strong> 處理完成。
 </p>
 
-<h2>7. Data Security</h2>
+<h2>7. 資料安全性措施</h2>
 <ul>
-  <li>Encrypted transmission (HTTPS/TLS)</li>
-  <li>Firebase Authentication security</li>
-  <li>Firestore Security Rules</li>
-  <li>Restricted developer access</li>
+  <li>HTTPS/TLS 加密傳輸</li>
+  <li>Firebase Authentication 身份驗證安全機制</li>
+  <li>Firestore Security Rules 權限控管</li>
+  <li>開發者受限的資料存取權限</li>
 </ul>
 
-<h2>8. Your Rights</h2>
+<h2>8. 使用者權利</h2>
 <ul>
-  <li>View and update your account information</li>
-  <li>Delete your account or content</li>
-  <li>Submit privacy-related inquiries</li>
+  <li>查詢與更新個人帳號資料</li>
+  <li>刪除帳號或使用者內容</li>
+  <li>提出隱私相關問題或請求</li>
 </ul>
 
-<h2>9. Contact Us</h2>
+<h2>9. 聯絡方式</h2>
 <p>
-Developer: <strong>你想想</strong><br>
-Email: <a href="mailto:cat.cafe1982@icloud.com">cat.cafe1982@icloud.com</a>
+開發者：<strong>你想想</strong><br>
+Email：<a href="mailto:cat.cafe1982@icloud.com">cat.cafe1982@icloud.com</a>
 </p>
 
-<h2>10. Policy Updates</h2>
+<h2>10. 政策更新</h2>
 <p>
-Updated versions of this policy will be posted and take effect immediately.
+本政策若有更新，將立即公開並立即生效。
 </p>
 
 </div>
